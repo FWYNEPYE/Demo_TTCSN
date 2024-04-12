@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bản đồ Việt Nam</title>
+    <style>
+        #header{
+            height: 300px;
+            width: 1500px;
+            background-image: url(banner.jpg);
+        
+        }
+
+
+        #map {
+            position: relative;
+            background-color: grey;
+            width: 1500px;
+        }
+        .marker {
+            position: absolute;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .marker:hover .marker-popup {
+            display: block;
+            width: 100px;
+        }
+        .marker .marker-popup a{
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .marker .marker-popup a:hover{
+            font-size: 25px;
+            
+        }
+
+
+        #footer{
+            clear: both;
+            background-color: rgb(213, 213, 213);
+            width: 1500px;
+            padding-left: 5%;
+            box-sizing: border-box;
+        }
+
+        #footer .footer11 ul{
+            list-style-type: none;
+        }
+        #footer .footer11 li{
+            line-height: 30px;
+        }
+
+        #footer .footer11 a{
+            text-decoration: none;
+            color: rgb(62, 60, 60);
+        }
+
+        #footer .footer11 a:hover{
+            color: rgb(26, 26, 243);
+            text-decoration:underline;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div id = "header">
+
+    </div>
+
+    <div id="map">
+        <img src="Anh_da_xoa_5.png" alt="Bản đồ Việt Nam" usemap="" style="width:   1500px;">
+
+<!-- Hà Nội -->
+        <div class="marker" style="top: 410px; left: 500px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>HÀ <br> NỘI</b></a>
+            </div>
+        </div>
+
+<!-- Lai Châu -->
+        <div class="marker" style="top: 245px; left: 180px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>LAI CHÂU</b></a>
+            </div>
+        </div>
+
+<!-- Điện Biên -->
+        <div class="marker" style="top: 300px; left: 165px; ">
+            <div class="marker-popup">
+                <a href="#"><b>ĐIỆN BIÊN</b></a>
+            </div>
+        </div>      
+
+<!-- Lào Cai -->
+        <div class="marker" style="top: 235px; left: 290px; ">
+            <div class="marker-popup">
+                <a href="#"><b>LÀO CAI</b></a>
+            </div>
+        </div>
+
+<!-- Sơn La-->
+        <div class="marker" style="top: 380px; left: 250px; ">
+            <div class="marker-popup">
+                <a href="#"><b>SƠN LA</b></a>
+            </div>
+        </div>
+
+<!-- Yên Bái -->
+        <div class="marker" style="top: 310px; left: 340px; ">
+            <div class="marker-popup">
+                <a href="#"><b>YÊN BÁI</b></a>
+            </div>
+        </div>
+
+<!-- Hà Giang -->
+        <div class="marker" style="top: 190px; left: 370px; ">
+            <div class="marker-popup">
+                <a href="#"><b>HÀ GIANG</b></a>
+            </div>
+        </div>
+
+<!-- Phú Thọ -->
+        <div class="marker" style="top: 350px; left: 415px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>PHÚ <br>THỌ</b></a>
+            </div>
+        </div>
+
+<!-- Cao Bằng -->
+        <div class="marker" style="top: 190px; left: 530px; ">
+            <div class="marker-popup">
+                <a href="#"><b>CAO BẰNG</b></a>
+            </div>
+        </div>
+
+<!-- Tuyên Quang -->
+        <div class="marker" style="top: 250px; left: 420px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>TUYÊN <br> QUANG</a>
+            </div>
+        </div>
+
+<!-- Bắc Cạn -->
+        <div class="marker" style="top: 240px; left: 500px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>BẮC CẠN</b></a>
+            </div>
+        </div>
+
+<!-- Thái Nguyên -->
+        <div class="marker" style="top: 310px; left: 495px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>THÁI <br> NGUYÊN</b></a>
+            </div>
+        </div>
+
+<!-- Vĩnh Phúc -->
+        <div class="marker" style="top: 360px; left: 470px;">
+            <div class="marker-popup">
+                <a href="#" ><b>VĨNH <br> PHÚC</b></a>
+            </div>
+        </div>
+
+<!-- Lạng Sơn -->
+        <div class="marker" style="top: 300px; left: 580px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>LẠNG SƠN</b></a>
+            </div>
+        </div>
+
+<!-- Bắc Giang -->
+        <div class="marker" style="top: 365px; left: 560px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>BẮC GIANG</b></a>
+            </div>
+        </div>
+
+<!-- Bắc Ninh -->
+        <div class="marker" style="top: 385px; left: 545px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>BẮC <br> NINH</b></a>
+            </div>
+        </div>
+
+<!-- Quảng Ninh -->
+        <div class="marker" style="top: 365px; left: 685px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>QUẢNG NINH</b></a>
+            </div>
+        </div>
+
+<!-- Hải Phòng -->
+<div class="marker" style="top: 450px; left: 610px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>HẢI PHÒNG</b></a>
+    </div>
+</div>
+
+<!-- Hải Dương -->
+<div class="marker" style="top: 418px; left: 575px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>HẢI DƯƠNG</b></a>
+    </div>
+</div>
+
+<!-- Thái Bình -->
+<div class="marker" style="top: 480px; left: 580px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>THÁI BÌNH</b></a>
+    </div>
+</div>
+
+<!-- Hưng Yên -->
+<div class="marker" style="top: 430px; left: 530px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>HƯNG <br> YÊN</b></a>
+    </div>
+</div>
+
+<!-- Nam Định -->
+        <div class="marker" style="top: 505px; left: 560px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>NAM ĐỊNH</b></a>
+            </div>
+        </div>
+
+ <!-- Hà Nam -->
+        <div class="marker" style="top: 470px; left: 525px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>HÀ NAM</b></a>
+            </div>
+        </div>
+
+<!-- Hòa Bình -->
+        <div class="marker" style="top: 455px; left: 430px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>HÒA BÌNH</b></a>
+            </div>
+        </div>
+
+<!-- Ninh Bình -->
+        <div class="marker" style="top: 500px; left: 510px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>NINH <br> BÌNH</b></a>
+            </div>
+        </div>
+
+<!-- Thanh Hóa -->
+        <div class="marker" style="top: 540px; left: 430px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>THANH HÓA</b></a>
+            </div>
+        </div>
+
+<!-- Nghệ An -->
+        <div class="marker" style="top: 640px; left: 400px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>NGHỆ AN</b></a>
+            </div>
+        </div>
+
+<!-- Hà Tĩnh -->
+        <div class="marker" style="top: 750px; left: 450px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>HÀ TĨNH</b></a>
+            </div>
+        </div>
+
+<!-- Quảng Bình -->
+        <div class="marker" style="top: 840px; left: 550px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>QUẢNG <br> BÌNH</b></a>
+            </div>
+        </div>
+
+<!-- Quảng Trị -->
+        <div class="marker" style="top: 950px; left: 630px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>QUẢNG <br> TRỊ</b></a>
+            </div>
+        </div>
+
+<!-- Thừa Thiên Huế -->
+        <div class="marker" style="top: 1000px; left: 690px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>THỪA <br>THIÊN HUẾ</b></a>
+            </div>
+        </div>
+
+<!-- Đà Nẵng -->
+        <div class="marker" style="top: 1040px; left: 785px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>ĐÀ <br> NẴNG</b></a>
+            </div>
+        </div>
+
+<!-- Quảng Nam -->
+        <div class="marker" style="top: 1100px; left: 750px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>QUẢNG NAM</b></a>
+            </div>
+        </div>
+
+<!-- Quảng Ngãi -->
+        <div class="marker" style="top: 1180px; left: 850px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>QUẢNG <br> NGÃI</b></a>
+            </div>
+        </div>
+
+<!-- Kon Tum -->
+        <div class="marker" style="top: 1230px; left: 760px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>KON TUM</b></a>
+            </div>
+        </div>
+
+<!-- Bình Định -->
+        <div class="marker" style="top: 1290px; left: 890px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>BÌNH <br> ĐỊNH</b></a>
+            </div>
+        </div>
+
+<!-- Gia Lai -->
+        <div class="marker" style="top: 1340px; left: 790px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>GIA LAI</b></a>
+            </div>
+        </div>
+
+<!-- Đắk Lắk -->
+        <div class="marker" style="top: 1450px; left: 790px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>ĐẮK LẮK</b></a>
+            </div>
+        </div>
+
+<!-- Phú Yên -->
+        <div class="marker" style="top: 1400px; left: 900px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>PHÚ <br> YÊN</b></a>
+            </div>
+        </div>
+
+<!-- Đắk Nông -->
+        <div class="marker" style="top: 1540px; left: 730px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>ĐẮK <br> NÔNG</b></a>
+            </div>
+        </div>
+
+<!-- Khánh Hòa -->
+        <div class="marker" style="top: 1530px; left: 890px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>KHÁNH <br> HÒA</b></a>
+            </div>
+        </div>
+
+<!-- Lâm Đồng -->
+        <div class="marker" style="top: 1620px; left: 750px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>LÂM ĐỒNG</b></a>
+            </div>
+        </div>
+
+<!-- Ninh Thuận -->
+        <div class="marker" style="top: 1600px; left: 880px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>NINH <br> THUẬN</b></a>
+            </div>
+        </div>
+
+<!-- Bình Thuận -->
+        <div class="marker" style="top: 1680px; left: 760px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>BÌNH THUẬN</b></a>
+            </div>
+        </div>
+
+<!-- Bình Phước -->
+        <div class="marker" style="top: 1600px; left: 630px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>BÌNH <br> PHƯỚC</b></a>
+            </div>
+        </div>
+
+<!-- Đồng Nai -->
+        <div class="marker" style="top: 1690px; left: 670px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>ĐỒNG <br> NAI</b></a>
+            </div>
+        </div>
+
+<!-- Tây Ninh -->
+        <div class="marker" style="top: 1640px; left: 530px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>TÂY <br> NINH</b></a>
+            </div>
+        </div>
+
+<!-- Bình Dương -->
+        <div class="marker" style="top: 1660px; left: 590px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>BÌNH <br> DƯƠNG</b></a>
+            </div>
+        </div>
+
+<!-- TP. Hồ Chí Minh -->
+        <div class="marker" style="top: 1710px; left: 595px;">
+            <div class="marker-popup">
+                <a href="#"><b> TP.HỒ <br> CHÍ <br> MINH</b></a>
+            </div>
+        </div>
+
+<!-- Vũng Tàu -->
+        <div class="marker" style="top: 1750px; left: 680px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>VŨNG <br> TÀU</b></a>
+            </div>
+        </div>
+
+<!-- Long An -->
+        <div class="marker" style="top: 1730px; left: 520px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>LONG AN</b></a>
+            </div>
+        </div>
+
+<!-- Đồng Tháo -->
+        <div class="marker" style="top: 1740px; left: 460px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>ĐỒNG <br> THÁP</b></a>
+            </div>
+        </div>
+
+<!-- Tiền Giang -->
+        <div class="marker" style="top: 1760px; left: 540px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>TIỀN <br> GIANG</b></a>
+            </div>
+        </div>
+
+<!-- Bến Tre -->
+        <div class="marker" style="top: 1810px; left: 590px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>BẾN TRE</b></a>
+            </div>
+        </div>
+
+<!-- Vĩnh Long -->
+        <div class="marker" style="top: 1810px; left: 520px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>VĨNH <br> LONG</b></a>
+            </div>
+        </div>
+
+<!-- Trà Vinh -->
+        <div class="marker" style="top: 1850px; left: 560px; ">
+            <div class="marker-popup">
+                <a href="bando.html"><b>TRÀ <br> VINH</b></a>
+            </div>
+        </div>
+
+<!-- An Giang -->
+<div class="marker" style="top: 1770px; left: 390px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>AN GIANG</b></a>
+    </div>
+</div>
+
+<!-- Cần Thơ -->
+<div class="marker" style="top: 1800px; left: 450px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>CẦN <br> THƠ</b></a>
+    </div>
+</div>
+
+<!-- Kiên Giang -->
+<div class="marker" style="top: 1830px; left: 410px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>KIÊN <br> GIANG</b></a>
+    </div>
+</div>
+
+<!-- Hậu Giang -->
+<div class="marker" style="top: 1850px; left: 465px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>HẬU <br> GIANG</b></a>
+    </div>
+</div>
+
+<!-- Sóc Trăng -->
+<div class="marker" style="top: 1880px; left: 510px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>SÓC <br> TRĂNG</b></a>
+    </div>
+</div>
+
+<!-- Bạc Liêu -->
+<div class="marker" style="top: 1905px; left: 450px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>BẠC <br>LIÊU</b></a>
+    </div>
+</div>
+
+<!-- Cà Mau -->
+<div class="marker" style="top: 1930px; left: 400px; ">
+    <div class="marker-popup">
+        <a href="bando.html"><b>CÀ <br>MAU</b></a>
+    </div>
+</div>
+
+
+    </div>
+    
+    <div id="footer">
+        <div class="footer1">
+            <h3>Về chúng tôi</h3>
+
+            <div class="footer11">
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="GopY.html">Góp ý</a></li>
+                </ul>
+                
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>

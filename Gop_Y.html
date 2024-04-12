@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mục góp ý nhỏooo</title>
+    <style>
+/*Phần đầu*/
+        #header{
+            height: 60px;
+            background-color: rgb(209, 46, 46);
+            color: white;
+            letter-spacing: 5px;
+            font-family:cursive;
+            padding-left: 5%;
+            box-sizing: border-box;
+        }
+
+ /*Phần thân */
+        #ngang{
+            margin-top: 5%;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #menu{
+            width: 30%;
+            float: left;
+        }
+        #menu li{
+            list-style-type: ">  ";
+            line-height: 60px;
+        }
+        #menu a{
+            text-decoration: none;
+            color: black;
+        }
+        #menu a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+
+
+
+        .form-row{
+            float: left;
+            padding-left: 20px;
+            border-left: 1.5px solid rgb(217, 215, 215);
+            line-height: 70px;
+        }
+
+        .form-row .form-left select, input{
+            height: 40px;
+            width: 300px;
+            border: 3px solid grey;   
+        }
+
+
+        .form-right{
+            padding-top: 7px;
+            margin-left: 620px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>VNFOODS</h1>
+    </div>
+
+    <div id="ngang">
+        <div id="menu">
+            <ul>
+                <li><a href="Untitled-2.html">TRANG CHỦ</a></li>
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="#">GÓP Ý</a></li>
+                <li><a href="#">HƯỚNG DẪN</a></li>
+            </ul>
+        </div>
+
+        <div class="form-row">
+            <div class="form-left">
+                <select class="form-control" name="Type">
+                    <option value="0"></option>
+                    <option value="1">Giao diện người dùng</option>
+                    <option value="4">Nội dung</option>
+                    <option value="5">Ý tưởng</option>
+                    <option value="6">Ý kiến riêng(Khác)</option>
+                </select>
+                <b>Danh mục góp ý</b>   
+            </div>
+
+            <div class="form-left">
+                <input class="form-control" id="Title" name="Title" placeholder="Tiêu đề" required="required" type="text" value="" /><span class="field-validation-valid" data-valmsg-for="Title" data-valmsg-replace="true"></span>
+                <b>Tiêu đề</b>
+            </div>
+
+            <div class="form-left">
+                <input class="form-control" data-val="true" data-val-email="Email sai định dạng" data-val-required="Nhập email" id="Email" name="Email" placeholder="Địa chỉ email" required="required" type="email" value="" /><span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                <b>Email</b>
+            </div>
+
+            <div class="form-left">
+                <textarea class="form-control" cols="20" data-val="true" data-val-required="Nhập nội dung" id="Content" name="Content" placeholder="Nội dung liên hệ" required="required" rows="12"></textarea>
+                <span class="field-validation-valid" data-valmsg-for="Content" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+</body>
+</html>
